@@ -1,0 +1,37 @@
+/* https://www.youtube.com/watch?v=nLzaXuTij_M */
+
+/* add this to the flex basis of the loop item
+calc((100% / var(--cols)) - (var(--gap) * (var(--cols) - 1)) / var(--cols)) 
+*/
+ 
+/* add this to the column gap and row gap of the parent container of the loop item
+var(--gap)
+*/
+ 
+/* set the parent container flex wrap to 'wrap', and direction to 'Horizontal(row)', stretch*/
+ 
+ 
+/*add this to the custom CSS of parent container of the loop item*/
+ 
+ 
+ 
+root {  
+  --gap: 2rem;
+  --cols: 1; /*mobile*/
+}
+ 
+ 
+ 
+@media (min-width:581px) { 
+root {
+    --cols: 2; /*tablet*/
+  }
+}
+ 
+ 
+@media (min-width:992px) { 
+root {
+    --cols: 3; /*destop*/
+  }
+}
+ 
